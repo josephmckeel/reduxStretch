@@ -1,7 +1,9 @@
-const { spookyTypes } = require('./types');
+const { spookyTypes } = require("./types");
 
 const initialState = {
   // code initial state here
+  steps: 0,
+  spookySounds: [],
 };
 
 const rootReducer = (state = initialState, action) => {
