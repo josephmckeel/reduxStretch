@@ -2,7 +2,6 @@ const { createStore } = require('redux');
 const rootReducer = require('../redux/reducers');
 const { createNewSpookySound, incrementStep } = require('../redux/actions');
 
-//testing our initial state
 describe('store', () => {
   let spookyTestStore;
   beforeEach(() => {
