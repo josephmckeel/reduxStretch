@@ -3,13 +3,14 @@ const { spookyTypes } = require("./types");
 //code actions here
 function incrementStep() {
   return {
-    type: "ADD_STEP",
+    type: spookyTypes.ADD_STEP,
   };
 }
 
-function createNewSpookySound() {
+function createNewSpookySound(sound) {
   return {
-    type: "NEW_SOUND",
+    type: spookyTypes.NEW_SOUND,
+    sound,
   };
 }
 

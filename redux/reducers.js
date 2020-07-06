@@ -8,7 +8,16 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
-    // code case statements here
+    case spookyTypes.ADD_STEP:
+      return {
+        ...state,
+        steps: state.steps + 1,
+      };
+    case spookyTypes.NEW_SOUND:
+      return {
+        ...state,
+        spookySounds: [...state.spookySounds, action.sound],
+      };
     default:
       return state;
   }
